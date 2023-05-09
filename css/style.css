@@ -6,11 +6,36 @@
 }
 /*-------*/
 
+/* UTILITY */
+
+.flex-container{
+    display: flex;
+}
+
+.x-y-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.y-center{
+    align-items: center;
+}
+
+.row-reverse{
+    flex-direction:row-reverse;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+/* UTILITY */
 
 /*----GENERAL----*/
 .container{
     max-width: 1200px;
     margin:0 auto;
+    height: 100%;
 }
 
 
@@ -90,6 +115,7 @@ main .flex-container.y-center{
 
 
 /* SEZIONE MAIN 5 */
+
 .flex-container.y-center.special{
     height: 800px;
 }
@@ -108,7 +134,11 @@ main .flex-container.y-center{
 /* SEZIONE FOOTER 1 */
 
 footer > section:nth-child(1){
-    height: 500px;
+    height: 400px;
+}
+
+footer  > section:nth-child(1) .container{
+    padding: 5px 0 0 0;
 }
 
 footer  > section:nth-child(1) .container > .flex-container{
@@ -140,19 +170,23 @@ footer .flex-container .ftr-big-col div{
 
 footer > section:nth-child(2){
     border-top: white;
-    height: 250px;
+    height: 150px;
     
 }
 
-footer > section:nth-child(2) > div > .flex-container{
-    align-items: flex-end;
-    height: 100px;
+
+footer > section:nth-child(2) > .container > .flex-container{
+    align-self: flex-end;
+    height: 70%;
     width: 100%;
 }
 
-footer > section:nth-child(2) div.flex-container.space-between{
-    width: 100%
+footer > section:nth-child(2) > .container > .flex-container > .flex-container.space-between{
+    height: 100%;
+    width: 100%;
+
 }
+
 
 footer > section:nth-child(2) div.flex-container.space-between *{
     height: 15%;
@@ -164,30 +198,6 @@ footer > section:nth-child(2) div.flex-container.space-between *{
 
 /* SEZIONE FOOTER 2 */
 
-/* UTILITY */
-
-.flex-container{
-    display: flex;
-}
-
-.x-y-center{
-    justify-content: center;
-    align-items: center;
-}
-
-.y-center{
-    align-items: center;
-}
-
-.row-reverse{
-    flex-direction:row-reverse;
-}
-
-.space-between{
-    justify-content: space-between;
-}
-
-/* UTILITY */
 
 
 /*-------DEBUG---------*/
