@@ -6,15 +6,293 @@
 }
 /*-------*/
 
+
 /*----GENERAL----*/
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+}
 
 
 /*---------------*/
 
+/* HEADER */
+header{
+    height: 100px;
+}
+
+.navbar{
+    width: 80%;
+    height: 50%;
+}
+
+.navbar *:not(input){
+    height: 100%;
+    
+}
+
+.navbar .logo, .navbar .login{
+    width: 20%;
+    
+}
+
+.navbar nav{
+    width: 60%;
+    height: 100%;
+}
+
+.navbar nav > ul{
+    list-style: none;
+    width: 100%;
+    
+    
+    
+}
+
+.navbar ul > li{
+    width: calc(100% / 4);
+}
+
+
+
+/*---------------  */
+
+/* SEZIONE MAIN 1 */
+
+.media{
+    height:300px;
+    width:100%
+}
+
+.media-window{
+    height: 80%;
+    width: 80%;
+}
+
+/* SEZIONE MAIN 1 */
+
+/* SEZIONE MAIN 2-4 */
+main .flex-container.y-center{
+    height: 400px;
+    width: 100%;
+}
+
+.small-col{
+    height: 90%;
+    width: calc(100% / 3);
+}
+
+.big-col{
+    height: 90%;
+    width: calc((100% / 3) * 2);
+}
+
+
+
+/* SEZIONE MAIN 5 */
+.flex-container.y-center.special{
+    height: 800px;
+}
+
+.big-box{
+    height: 90%;
+    width: 100%;
+}
+
+
+
+
+/* SEZIONE MAIN 5 */
+
+
+/* SEZIONE FOOTER 1 */
+
+footer > section:nth-child(1){
+    height: 500px;
+}
+
+footer  > section:nth-child(1) .container > .flex-container{
+    height: 350px;
+    
+}
+
+
+footer .flex-container .ftr-small-col{
+    height:90%;
+    width: 40%;
+}
+
+footer .flex-container .ftr-big-col{
+    height: 90%;
+    width: 60%;
+}
+
+footer .flex-container .ftr-big-col div{
+    height: 100%;
+    width: calc(100% / 4);
+}
+
+/* SEZIONE FOOTER 1 */
+
+
+
+/* SEZIONE FOOTER 2 */
+
+footer > section:nth-child(2){
+    border-top: white;
+    height: 250px;
+    
+}
+
+footer > section:nth-child(2) > div > .flex-container{
+    align-items: flex-end;
+    height: 100px;
+    width: 100%;
+}
+
+footer > section:nth-child(2) div.flex-container.space-between{
+    width: 100%
+}
+
+footer > section:nth-child(2) div.flex-container.space-between *{
+    height: 15%;
+    width: calc(100% / 6);
+    border: solid black 1px;
+}
+
+
+
+/* SEZIONE FOOTER 2 */
+
+/* UTILITY */
+
+.flex-container{
+    display: flex;
+}
+
+.x-y-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.y-center{
+    align-items: center;
+}
+
+.row-reverse{
+    flex-direction:row-reverse;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+/* UTILITY */
+
+
 /*-------DEBUG---------*/
 
 .debug{
-
+    
     background-color: aqua;
     border: 3px dashed red;
+}
+
+.debug > header{
+    background-color: lightblue;
+    
+}
+
+.debug > header > .navbar{
+    background-color: goldenrod;
+    
+    
+}
+
+.debug > header > .navbar{
+    border: solid black 2px;
+
+    
+}
+
+.debug > header > .navbar *{
+    border: solid black 1px;
+
+    
+}
+
+.debug > main > section:nth-child(1){
+    background-color: blue;
+}
+
+.debug > main > section:nth-child(1) .media-window{
+    background-color: fuchsia;
+    border: 5px dashed black;
+}
+
+.debug > main > section:nth-child(even){
+    background-color: lightcoral;
+}
+
+.debug > main > section:nth-child(3){
+    background-color: lightsalmon;
+}
+
+.debug > main > section .small-col{
+    background-color: red;
+    border: 5px dotted blueviolet;
+}
+
+.debug > main > section .big-col{
+    background-color: green;
+    border: 5px dotted yellow;
+
+}
+
+.debug > main > section:nth-child(5){
+    background-color: darkslategrey;
+}
+
+.debug > main > section .big-box{
+    background-color: orange;
+    border: 5px dashed purple;
+
+}
+
+.debug > footer > section:nth-child(1){
+    background-color: limegreen;
+}
+
+.debug > footer > section:nth-child(1) .ftr-small-col{
+    background-color: brown;
+    border: solid yellow 3px;
+
+}
+
+.debug > footer > section:nth-child(1) .ftr-big-col{
+    background-color: antiquewhite;
+    border: dashed purple 3px;
+
+}
+
+.debug > footer > section:nth-child(1) .ftr-big-col div{
+border: dotted black 2px;
+}
+
+
+
+.debug > footer > section:nth-child(2){
+    background-color: bisque;
+    ;
+    
+}
+
+.debug footer > section:nth-child(2) > div > .flex-container{
+    background-color: aqua;
+    border: 10px dashed grey;
+}
+
+.debug footer > section:nth-child(2) div.flex-container.space-between *{
+    border: solid black 1px;
+    background-color: red;
 }
